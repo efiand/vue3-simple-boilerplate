@@ -10,3 +10,7 @@ app.use(createPinia());
 app.use(router);
 
 app.mount('#app');
+
+if (import.meta.env.DEV) {
+	import('../dev/main.js');
+}
